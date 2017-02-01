@@ -166,3 +166,11 @@ a:hover:after {
   transform: translate(-50%, 0) rotate(45deg);
   cursor: pointer;
 }
+
+.content{
+  margin: 50px
+
+}
+
+
+
