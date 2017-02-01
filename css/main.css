@@ -13,7 +13,16 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video */
-a, nav, ul, li{
+a, nav, ul{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+nav li{
   margin: 0;
   padding: 0;
   border: 0;
@@ -35,9 +44,10 @@ html {
 }
 
 /* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
+nav ul {
   list-style: none;
 }
+
 
 /* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
@@ -105,11 +115,13 @@ body {
 a {
   text-decoration: none;
   color: #333;
-  display: block;
+}
+nav a:hover{
+  text-decoration: none;
 }
 
 /* line 24, ../scss/main.scss */
-a:after {
+nav a:after {
   content: '';
   position: relative;
   display: block;
@@ -119,7 +131,7 @@ a:after {
 }
 
 /* line 32, ../scss/main.scss */
-a:hover:after {
+nav a:hover:after {
   width: 100%;
 }
 
@@ -149,19 +161,30 @@ a:hover:after {
 }
 
 /* line 52, ../scss/main.scss */
-.second {
-  background-color: #51A9F9;
+.second{
+  background-color: #bea1a5;
+  color: #2d00e8;
+
 }
 
 /* line 55, ../scss/main.scss */
 .third {
-  background-color: #F5D328;
+  background-color: #B6CAC0;
+  color: #c12d1d;
 }
 
 /* line 58, ../scss/main.scss */
 .fourth {
-  background-color: #6FBF41;
+  background-color: #E1F0FE;
+  color: #c12d1d;
 }
+
+/* line 58, ../scss/main.scss */
+.fift {
+  background-color: #efe8d8;
+  color: #3278b7;
+}
+
 
 /* line 62, ../scss/main.scss */
 .opr-next {
@@ -176,12 +199,20 @@ a:hover:after {
 }
 
 section{
-  margin-top: 150px;
+  margin-top: 100px;
+}
+
+article a{
+  display: inline;
 }
 
 article{
-  margin: 50px;
+  margin: 150px;
 }
 
-
+h1{
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
 
