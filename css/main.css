@@ -13,7 +13,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video */
-a{
+a, nav, ul, li{
   margin: 0;
   padding: 0;
   border: 0;
@@ -169,8 +169,11 @@ a:hover:after {
 }
 
 section{
-  margin: 50px;
   margin-top: 150px;
+}
+
+article{
+  margin: 50px;
 }
 
 
