@@ -1,177 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>PAGE-Root</title>
-    <link rel="stylesheet" href="css/bootstrap.css">  
-    <link rel="stylesheet" href="css/font-awesome.css">  
-    <link rel="stylesheet" href="css/main.css"/>
-    <script src="js/bootstrap.js"></script> 
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-<body>
 
-<nav id="nav-main">
-    <ul class="opr-nav">
-        <li><a data-target="1">PAGE-Root</a></li>
-        <li><a data-target="2">Why?</a></li>
-        <li><a data-target="3">Installation</a></li>
-        <li><a data-target="4">Use</a></li>
-        <li><a data-target="5">About</a></li>
-    </ul>
-</nav>
+<body id="page-top" class="index">
 
-<div class="opr-container">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">PAGE-Root</a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#what">What is PAGE-Root</a>
+                    </li>                    
+                    <li class="page-scroll">
+                        <a href="#installation">Installation</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#use">Use</a>
+                    </li>                  
+                    <li class="page-scroll">
+                        <a href="#about">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-    <div class="opr-page opr-current first" data-target="1">
-        
-
-        <section class="content about">
-            <img src="img/pager1.png"  class="img-responsive img-rounded">
-        </section>
-
-        <div class="opr-next"></div>
-    </div>
-
-
-    <div class="opr-page second" data-target="2">
-        <section class="content about">
-          <article>
-                <div class="row about-text">
-                    <div class="col-md-5">
-                        <img src="img/rootkey.png"  class="img-responsive img-rounded">
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                        
-                        <h1>What is PAGE-Root?</h1>
-                        
-                            PAGE-Root (Pattern Analysis of Gene Expression in Root) is a pipeline designed to analyse and visualize gene and reporter expression patterns in root.
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/pager1.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">PAGE-Root</span>
+                        <hr class="star-light">
                     </div>
                 </div>
-            </article>
-        </section>            
-        <div class="opr-next"></div>
-    </div>
+            </div>
+        </div>
+    </header>
 
 
 
+    <!-- About Section -->
+    <section class="success1" id="what">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>What is PAGE-Root?</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <img class="img-responsive" src="img/root.png" alt="">
+                </div>
+                <div class="col-lg-4 col-lg-offset-1">
+                    <p>PAGE-Root (Pattern Analysis of Gene Expression in Root) is a pipeline designed to analyse and visualize gene and reporter expression patterns in root.</p></br>
 
-    <div class="opr-page third" data-target="3">
-        <section class="content about">
-          <article>
-                <div class="row about-text">
-                    <div class="col-md-5">
-                        <h1>Installing PAGE-Root</h1>
-                            PAGE-Root has been developed as a Shiny app, to ease its maintenance and deployment.</br></br>
+                    <p>PAGE-Root work with data coming from the CellSet iùage analysis tool and is based on the Root System Markup Language (RSML).</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            Running the app is really simple an does not require any coding skills:</br></br>
 
-                            <ol>
-                                <li>Install R (if you do not have the latest version of R, it will help to update it)</li>
-                                <li>(Optional) Install RStudio</li>
-                                <li>Open R and, in the console, type in the following code:</li>
-                            </ol>
-                            <pre>
+    <!-- About Section -->
+    <section class="success" id="installation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Installing PAGE-Root</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>PAGE-Root has been developed as a Shiny app, to ease its maintenance and deployment.</br></br>
+
+                    Running the app is really simple an does not require any coding skills:</br></br>
+                    </p>
+                           
+                </div>
+                <div class="col-lg-6">
+                     <p>
+                     1. Install R (if you do not have the latest version of R, it will help to update it)</br></br>
+                     2. (Optional) Install RStudio</br></br>
+                     3. Open R and, in the console, type in the following code:</br></br>
+                     </p>
+                    <pre>
 install.packages("shiny")
 library("shiny")
-shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")</pre></br></br>
-
-                            PAGE-Root will open, either in a new window if you are using RStudio, or in your favorite web browser.
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                        <img src="img/root.png"  class="img-responsive img-rounded">
-                    </div>
-
+shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
+                    </pre>
+                    </br>
+                    <p>
+                    PAGE-Root will open, either in a new window if you are using RStudio, or in your favorite web browser.</br></br></p>
                 </div>
-            </article>
-        </section>        
-
-        <div class="opr-next"></div>
-    </div>
 
 
-    <div class="opr-page fourth" data-target="4">
-        <section class="content about">
-          <article>
-                <div class="row about-text">
-                    <div class="col-md-6">
-                        <img src="img/rsml.png"  class="img-responsive img-rounded">
-                    </div>
-                    <div class="col-md-5">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-external-link"></i>  View source code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>    
 
-                        <h1>Using PAGE-Root</h1>
+    <!-- About Section -->
+    <section class="success1" id="use">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Using PAGE-Root</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-responsive" src="img/rsml.png" alt="">
+                </div>
+                <div class="col-lg-6 col-lg-offset-1">
+                    <p>
+                        PAGE-Root requires two types of datafiles to run:</br></br>
 
-                        PAGE-Root requires two types of datafiles to run:
+                        1. An RSML file that contains the fluoresence data</br></br>
+                        2. A datafile (.csv) that contains the gene expression data</br></br>
+                        
 
-                        <ol>
-                            <li>An RSML file that contains the fluoresence data</li>
-                            <li>A datafile (.csv) that contains the gene expression data</li>
-                        </ol>
+                        For each of these files, the data needs to be organised by cell types. The types allowed are :</br></br>
 
-                        For each of these files, the data needs to be organised by cell types. The types allowed are :
+                        - Columella</br>
+                        - Stele</br>
+                        - Cortex</br>
+                        - Quiecent center</br>
+                        - Endodermis</br>
+                        - Exodermis</br>
+                        - Lateral root cap</br></br>
+                        
 
-                        <ol>
-                            <li>Columella</li>
-                            <li>Stele</li>
-                            <li>Cortex</li>
-                            <li>Quiecent center</li>
-                            <li>Endodermis</li>
-                            <li>Exodermis</li>
-                            <li>Lateral root cap</li>
-                        </ol>
-
-                        Fluoresence data are usually acquired using the <a href="#">CellSet tool</a>. Data from CellSet can be converted into an RSML file using a <a href="https://github.com/PAGERoot/CellSet-PAGER">custom converter</a></br></br>
+                        Fluoresence data are usually acquired using the <a href="#">CellSet tool</a>. Data from CellSet can be converted into an RSML file using a <a href="https://github.com/PAGERoot/CellSet-PAGER">custom converter</a></br></br>.
 
                         <a type="button" class="btn btn-success" href="assets/reporters.rsml" download><i class="fa fa-download" aria-hidden="true"></i> Test reporter file</a>
-                        <a type="button" class="btn btn-success" href="assets/genes.txt" download><i class="fa fa-download" aria-hidden="true"></i> Test gene file</a>
+                        <a type="button" class="btn btn-success" href="assets/genes.txt" download><i class="fa fa-download" aria-hidden="true"></i> Test gene file</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About us</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="img-responsive" src="img/rootkey.png" alt="">
+                </div>
+                <div class="col-lg-6 col-lg-offset-1 ">
+                    <p> PAGE-Root what born from a collaboration between researchers from the Carnegie Science Institute (José Dinneny) and the Forschungszentrum Juelich (Guillaume Lobet). </br></br>
+
+                    PAGE-root what first used here:
+
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</blockquote>
+                    </p>
+
+                    <hr>
+                    PAGE-Root is released under a GPL licence, which means that redistribution and use in source and binary forms, with or without modification, are permitted under the GNU General Public License v3 and provided that the following conditions are met:</br></br>
+
+                    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</br></br>
+
+                    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</br></br>
+
+                    3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+                    
+                    <hr>
+                    <a type="button" class="btn btn-primary" href="https://github.com/PAGERoot/CellSet-PAGER"><i class="fa fa-github" aria-hidden="true"></i> Source code on GitHub</a>  <a type="button" class="btn btn-default" href="https://github.com/PAGERoot/CellSet-PAGER"><i class="fa fa-external-link" aria-hidden="true"></i> View paper</a>
+
+                    <hr>
+                    <img src="img/carnegie.png" class="img-responsive img-thumbnail" style="height:70px">  <img src="img/juelich_logo.jpg" class="img-responsive img-thumbnail" style="height:70px">  <img src="img/ucl_logo.png" class="img-responsive img-thumbnail" style="height:70px"> 
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                     </div>
                 </div>
-            </article>
-        </section>        
-        <div class="opr-next"></div>
-    </div>
-
-    <div class="opr-page fift" data-target="5">
-        <section class="content about">
-          <article>
-                <div class="row about-text">
-                    <div class="col-md-5">
-                        <h1>About PAGE-Root</h1>
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </br></br>
-
-                            <a type="button" class="btn btn-primary" href="https://github.com/PAGERoot/CellSet-PAGER"><i class="fa fa-github" aria-hidden="true"></i> Source code on GitHub</a></br></br>
-
-                            <hr>
-                            <img src="img/carnegie.png" class="img-responsive img-thumbnail" style="height:70px">  <img src="img/juelich_logo.jpg" class="img-responsive img-thumbnail" style="height:70px">  <img src="img/ucl_logo.png" class="img-responsive img-thumbnail" style="height:70px">  
-
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; PAGE-Root 2017
                     </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                        <img src="img/root.png"  class="img-responsive img-rounded">
-                    </div>
-
                 </div>
-            </article>
-        </section>        
+            </div>
+        </div>
+    </footer>
 
-        <p>&nbsp;</p>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
 
 
 
-</div>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="js/jquery.touchSwipe.min.js"></script>
-<script src="js/opr.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
 
 </body>
+
 </html>
