@@ -80,6 +80,13 @@
                     <img class="img-responsive" src="img/pager1.png" alt="">
                     <div class="intro-text">
                         <span class="name">PAGE-Root</span>
+                            <a href="https://github.com/PAGERoot" class="btn btn-lg btn-default" target="_blank">
+                                <i class="fa fa-external-link"></i>  View source code
+                            </a>
+                            <a href="https://plantmodelling.shinyapps.io/pager/" class="btn btn-lg btn-primary" target="_blank">
+                                <i class="fa fa-external-link"></i>  Try webapp
+                            </a>
+                        </br></br>
                         <hr class="star-light">
                     </div>
                 </div>
@@ -102,10 +109,16 @@
                 <div class="col-lg-4 col-lg-offset-1">
                     <img class="img-responsive" src="img/root.png" alt="">
                 </div>
-                <div class="col-lg-4 col-lg-offset-1">
+                <div class="col-lg-5 col-lg-offset-1">
                     <p>PAGE-Root (Pattern Analysis of Gene Expression in Root) is a pipeline designed to analyse and visualize gene and reporter expression patterns in root.</p></br>
 
-                    <p>PAGE-Root work with data coming from the CellSet iùage analysis tool and is based on the Root System Markup Language (RSML).</p>
+                    <p>PAGE-Root work with data coming from the CellSet image analysis tool and is based on the Root System Markup Language (RSML).</p></br>
+
+                    <p>PAGE-Root perfoms two main analysis:</br></br>
+                    1. A pair-wise comparison for reporter flourescence levels for each combinaison of reporter lines. </br>
+                    <small>For each combinaison, PAGE-Root perfoms a MANOVA analysis and computes an r-square, Pearson and Spearman (ranked) correlation factors.</small></br></br>
+                    2. A pair-wise comparison of the reporter fluorescence levels data and expression data (microarray) for each line. </br>
+                    <small>For each combinaison, PAGE-Root computes an r-square, Pearson and Spearman (ranked) correlation factors.</small></p>
                 </div>
             </div>
         </div>
@@ -126,12 +139,20 @@
                 <div class="col-lg-4 col-lg-offset-2">
                     <p>PAGE-Root has been developed as a Shiny app, to ease its maintenance and deployment.</br></br>
 
-                    Running the app is really simple an does not require any coding skills:</br></br>
+                    If you want to try the app, with sample data, try the online version:
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+                        <a href="#" class="btn btn-lg btn-outline">
+                         <i class="fa fa-external-link"></i>  Try it online
+                        </a>
+                    </div>
                     </p>
                            
                 </div>
                 <div class="col-lg-6">
                      <p>
+                     Or, if you want to use your own data, launch it from your own computer:</br></br>
+
                      1. Install R (if you do not have the latest version of R, it will help to update it)</br></br>
                      2. (Optional) Install RStudio</br></br>
                      3. Open R and, in the console, type in the following code:</br></br>
@@ -148,6 +169,8 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
 
 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <hr class="star-light">
+                    <p>Feeling adventurous? Check out the source code.</p>
                     <a href="#" class="btn btn-lg btn-outline">
                         <i class="fa fa-external-link"></i>  View source code
                     </a>
