@@ -1,27 +1,43 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Freelancer](http://startbootstrap.com/template-overviews/freelancer/)
 
-[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
+# Using PAGE-Root
 
-## Getting Started
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
-* Fork the repo
+![](img/page_root.jpg)
+<small>Overview of the PAGE-Root pipeline</small>
 
-## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
+## 0. Prerequists
 
-## Creator
+PAGE-Root (or PAGER) is a app developped using R and the Shiny framework. Therefore, R need to be install to be able to run the app. We recommand to install [RStudio](https://www.rstudio.com/)
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## Copyright and License
+## 1. Loading your data from CellSet
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+The first step in the analysis is to transform the output data from CellSet into an RSML file that can be read by PAGE-Root. 
+
+The CellSet data should be organised in separated Excell files, one per genotype. Each repetition of the genotype will be contained in a different sheet of the file. And example of CellSet output file can be [found here](/docs/cellset.xlsx). 
+
+To process the CellSet data and compile then in a single RSML (Root System Markup Language) file, you can use the Cellset2Pager shiny app. The code the app is [available here](https://github.com/PAGERoot/CellSet-PAGER). 
+
+To launch the app, enter the following command in your R console:
+
+	library(shiny)
+	shiny::runGitHub("PAGERoot/CellSet-PAGER", "PAGERoot") 
+
+
+![](img/cellset2pager.png)
+
+
+PAGE-Root accepts only specific cell types:
+
+- columella
+- cortex
+- endodermis
+- epidermis
+- lateralrootcap
+- QC
+- stele
+
+ Therefore, the CellSet2Pager app allows you to homogenize the names of the different cell types in your dataset. 
