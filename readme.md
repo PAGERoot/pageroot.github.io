@@ -2,7 +2,7 @@
 # Using PAGE-Root
 
 
-![](img/page_root.jpg)
+![](img/pager_root.jpg)
 <small>Overview of the PAGE-Root pipeline</small>
 
 

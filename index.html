@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PAGE-Root</title>
+    <title>PAGER</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">PAGE-Root</a>
+                <a class="navbar-brand" href="#page-top">PAGER</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,7 +51,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#what">What is PAGE-Root</a>
+                        <a href="#what">What is PAGER</a>
                     </li>                    
                     <li class="page-scroll">
                         <a href="#installation">Installation</a>
@@ -64,6 +64,12 @@
                     </li>       
                     <li class="page-scroll">
                         <a href="#about">About us</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://plantmodelling.shinyapps.io/pager/" target="_blank"><i class="fa fa-external-link"></i>  Try</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://pageroot.github.io/PAGE-Root-Manual/" target="_blank"><i class="fa fa-external-link"></i>  Manual</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +85,8 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/pager1.png" alt="">
                     <div class="intro-text">
-                        <span class="name">PAGE-Root</span>
+                        <span class="name">PAGER</span>
+                        <h3>Pattern Analysis of Gene Expression in Root</h3></br>
                             <a href="https://github.com/PAGERoot" class="btn btn-lg btn-default" target="_blank">
                                 <i class="fa fa-external-link"></i>  View source code
                             </a>
@@ -101,7 +108,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>What is PAGE-Root?</h2>
+                    <h2>What is PAGER?</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -110,15 +117,15 @@
                     <img class="img-responsive" src="img/root.png" alt="">
                 </div>
                 <div class="col-lg-5 col-lg-offset-1">
-                    <p>PAGE-Root (Pattern Analysis of Gene Expression in Root) is a pipeline designed to analyse and visualize gene and reporter expression patterns in root.</p></br>
+                    <p>PAGER (Pattern Analysis of Gene Expression in Root) is a pipeline designed to analyse and visualize gene and reporter expression patterns in root.</p></br>
 
-                    <p>PAGE-Root work with data coming from the CellSet image analysis tool and is based on the Root System Markup Language (RSML).</p></br>
+                    <p>PAGER work with data coming from the CellSet image analysis tool and is based on the Root System Markup Language (RSML).</p></br>
 
-                    <p>PAGE-Root perfoms two main analysis:</br></br>
+                    <p>PAGER perfoms two main analysis:</br></br>
                     1. A pair-wise comparison for reporter flourescence levels for each combinaison of reporter lines. </br>
-                    <small>For each combinaison, PAGE-Root perfoms a MANOVA analysis and computes an r-square, Pearson and Spearman (ranked) correlation factors.</small></br></br>
+                    <small>For each combinaison, PAGER perfoms a MANOVA analysis and computes an r-square, Pearson and Spearman (ranked) correlation factors.</small></br></br>
                     2. A pair-wise comparison of the reporter fluorescence levels data and expression data (microarray) for each line. </br>
-                    <small>For each combinaison, PAGE-Root computes an r-square, Pearson and Spearman (ranked) correlation factors.</small></p>
+                    <small>For each combinaison, PAGER computes an r-square, Pearson and Spearman (ranked) correlation factors.</small></p>
                 </div>
             </div>
         </div>
@@ -130,14 +137,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Installing PAGE-Root</h2>
+                    <h2>Installing PAGER</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
 
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>PAGE-Root has been developed as a Shiny app, to ease its maintenance and deployment.</br></br>
+                    <p>PAGER has been developed as a Shiny app, to ease its maintenance and deployment.</br></br>
 
                     If you want to try the app, with sample data, try the online version:
                     <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -164,7 +171,7 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
                     </pre>
                     </br>
                     <p>
-                    PAGE-Root will open, either in a new window if you are using RStudio, or in your favorite web browser.</br></br></p>
+                    PAGER will open, either in a new window if you are using RStudio, or in your favorite web browser.</br></br></p>
                 </div>
 
 
@@ -184,17 +191,17 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Using PAGE-Root</h2>
+                    <h2>Using PAGER</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-responsive" src="img/plot.png" alt="">
+                    <img class="img-responsive" src="img/pager-root.jpg" alt="">
                 </div>
                 <div class="col-lg-6 col-lg-offset-1">
                     <p>
-                        PAGE-Root requires two types of datafiles to run:</br></br>
+                        PAGER requires two types of datafiles to run:</br></br>
 
                         1. An RSML file that contains the fluoresence data</br></br>
                         2. A datafile (.csv) that contains the gene expression data</br></br>
@@ -210,11 +217,8 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
                         - Exodermis</br>
                         - Lateral root cap</br></br>
                         
+                        <a type="button" class="btn btn-success" href="https://pageroot.github.io/PAGE-Root-Manual/" target="_blank"><i class="fa fa-cogs" aria-hidden="true"></i> View user manual</a>
 
-                        Fluoresence data are usually acquired using the <a href="#">CellSet tool</a>. Data from CellSet can be converted into an RSML file using a <a href="https://github.com/PAGERoot/CellSet-PAGER">custom converter</a>.</br></br>
-
-                        <a type="button" class="btn btn-success" href="assets/reporters.rsml" download><i class="fa fa-download" aria-hidden="true"></i> Test reporter file</a>
-                        <a type="button" class="btn btn-success" href="assets/genes.txt" download><i class="fa fa-download" aria-hidden="true"></i> Test gene file</a></p>
                 </div>
             </div>
         </div>
@@ -225,7 +229,7 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>PAGE-Root <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> RSML</h2>
+                    <h2>PAGER <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> RSML</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -235,7 +239,7 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
                 </div>
                 <div class="col-lg-6 col-lg-offset-1 ">
                     <p>
-                    PAGE-Root was build to work with data store in a Root System Markup Language (RSML) file. 
+                    PAGER was build to work with data store in a Root System Markup Language (RSML) file. 
                     </p>
                     <p>
                     The RSML format was indeed created as common format for storing root system information, and accomodates well for the storage of fluoresence data.
@@ -244,7 +248,7 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
                     
                     
                     <hr>
-                        <a type="button" class="btn btn-default" href="assets/reporters.rsml" download><i class="fa fa-download" aria-hidden="true"></i> Test RSML file</a>
+                        <a type="button" class="btn btn-default" href="docs/reporter_example_small.rsml" download><i class="fa fa-download" aria-hidden="true"></i> Test RSML file</a>
                         <a type="button" class="btn btn-default" href="http://rootsystemml.github.io"><i class="fa fa-external-link" aria-hidden="true"></i> More info about RSML</a></p>
 
                 </div>
@@ -261,7 +265,7 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About us</h2>
-                    <hr class="star-light">
+                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
@@ -269,17 +273,20 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
                     <img class="img-responsive" src="img/rootkey.png" alt="">
                 </div>
                 <div class="col-lg-6 col-lg-offset-1 ">
-                    <p> PAGE-Root what born from a collaboration between researchers from the Carnegie Science Institute (José Dinneny) and the Forschungszentrum Juelich (Guillaume Lobet). </br></br>
+                    <p> PAGER what born from a collaboration between researchers from the Carnegie Science Institute (José Dinneny) and the Forschungszentrum Juelich (Guillaume Lobet). </br></br>
 
                     
 
-                    PAGE-root what first used here:
+                    PAGER what first used here:
 
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</blockquote>
+                    <blockquote>
+					<b>A synthetic biology pipeline identifies a common regulatory mechanism between stress and development in roots</b></br>
+					Rui Wu, Lina Duan, José Pruneda-Paz, Guillaume Lobet, Shahram Emami, Dong-ha Oh, Micheal Pound, Jonah Kornbluh, Muh-ching Yee, Steve Kay, and José R. Dinneny
+                    </blockquote>
                     </p>
 
                     <hr>
-                    PAGE-Root is released under a GPL licence, which means that redistribution and use in source and binary forms, with or without modification, are permitted under the GNU General Public License v3 and provided that the following conditions are met:</br></br>
+                    PAGER is released under a GPL licence, which means that redistribution and use in source and binary forms, with or without modification, are permitted under the GNU General Public License v3 and provided that the following conditions are met:</br></br>
 
                     1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</br></br>
 
@@ -344,7 +351,7 @@ shiny::runGitHub("PAGERoot/PAGER-Shiny", "PAGERoot")
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; PAGE-Root 2017
+                        Copyright &copy; PAGER 2017
                     </div>
                 </div>
             </div>
